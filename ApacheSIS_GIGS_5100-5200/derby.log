@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Fri Jul 22 16:46:56 CDT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0182-27e0-bb9a-00001c7b8370 
+on database directory D:\ApacheSISData\Databases\SpatialMetadata with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/Michael/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_261-b12
+user.dir=C:\Users\Michael\GIGS_TEST\github\Michael\ApacheSIS_GIGS_5100-5200\ApacheSIS_GIGS_5100-5200
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Jul 22 16:47:00 CDT 2022:
+Shutting down instance a816c00e-0182-27e0-bb9a-00001c7b8370 on database directory D:\ApacheSISData\Databases\SpatialMetadata with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
