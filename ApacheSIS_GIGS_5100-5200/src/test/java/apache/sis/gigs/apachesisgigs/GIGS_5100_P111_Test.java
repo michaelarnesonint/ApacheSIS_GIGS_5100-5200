@@ -1,11 +1,12 @@
 package apache.sis.gigs.apachesisgigs;
 
 import java.io.File;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class GIGS_5100_P111_Test {
 
-    public final static String GIGS_TEST_DIRECTORY = "Path to GIGS test files";
+    public final static String GIGS_TEST_DIRECTORY = "";
     
     @Test
     public void test_GIGS_conv_5101_TM_part1_JHS() throws Exception {
@@ -14,6 +15,7 @@ public class GIGS_5100_P111_Test {
         runner.runTest(file);
     }
 
+    @Ignore
     @Test
     public void test_GIGS_conv_5101_TM_part1_USGS() throws Exception {
         File file = new File(GIGS_TEST_DIRECTORY + "\\GIGS 5100 Conversion test data\\P111\\GIGS_conv_5101_TM_part1_USGS.p111");
@@ -28,6 +30,7 @@ public class GIGS_5100_P111_Test {
         runner.runTest(file);
     }
 
+    @Ignore
     @Test
     public void test_GIGS_conv_5101_TM_part2_USGS() throws Exception {
         File file = new File(GIGS_TEST_DIRECTORY + "\\GIGS 5100 Conversion test data\\P111\\GIGS_conv_5101_TM_part2_USGS.p111");
@@ -42,6 +45,7 @@ public class GIGS_5100_P111_Test {
         runner.runTest(file);
     }
 
+    @Ignore
     @Test
     public void test_GIGS_conv_5101_TM_part3_USGS() throws Exception {
         File file = new File(GIGS_TEST_DIRECTORY + "\\GIGS 5100 Conversion test data\\P111\\GIGS_conv_5101_TM_part3_USGS.p111");
@@ -56,6 +60,7 @@ public class GIGS_5100_P111_Test {
         runner.runTest(file);
     }
 
+    @Ignore
     @Test
     public void test_GIGS_conv_5101_TM_part4_USGS() throws Exception {
         File file = new File(GIGS_TEST_DIRECTORY + "\\GIGS 5100 Conversion test data\\P111\\GIGS_conv_5101_TM_part4_USGS.p111");
