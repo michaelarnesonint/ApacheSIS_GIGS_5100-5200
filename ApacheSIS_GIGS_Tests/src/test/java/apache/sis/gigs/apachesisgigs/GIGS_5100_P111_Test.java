@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class GIGS_5100_P111_Test {
 
-    public final static String GIGS_TEST_DIRECTORY = "";
+    public final static String GIGS_TEST_DIRECTORY = "Path to GIGS test files";
     
     @Test
     public void test_GIGS_conv_5101_TM_part1_JHS() throws Exception {

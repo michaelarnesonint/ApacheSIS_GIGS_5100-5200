@@ -442,8 +442,4 @@ public class P111FileParser {
     public List<PointConversionParameters> getConversionParameters() {
         return conversionParameters;
     }
-
-    //code from org.apache.sis.measure.SexagesimalConverter.convert(double)
-    
-
 }

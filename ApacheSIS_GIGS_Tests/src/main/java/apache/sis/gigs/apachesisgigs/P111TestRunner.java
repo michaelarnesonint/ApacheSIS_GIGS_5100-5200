@@ -20,13 +20,13 @@ import org.opengis.util.FactoryException;
 
 public class P111TestRunner {
 
-    private CoordinateOperationAuthorityFactory opAuthorityfactory;
+    private CoordinateOperationAuthorityFactory opAuthorityFactory;
     private CoordinateOperationFactory opFactory;
     private CRSAuthorityFactory crsAuthorityFactory;
     private CRSFactory crsFactory;
 
     public P111TestRunner() throws Exception {
-        opAuthorityfactory = ServiceLoader.load(CoordinateOperationAuthorityFactory.class).iterator().next();
+        opAuthorityFactory = ServiceLoader.load(CoordinateOperationAuthorityFactory.class).iterator().next();
         opFactory = ServiceLoader.load(CoordinateOperationFactory.class).iterator().next();
         crsAuthorityFactory = ServiceLoader.load(CRSAuthorityFactory.class).iterator().next();
         crsFactory = ServiceLoader.load(CRSFactory.class).iterator().next();
@@ -147,12 +147,12 @@ public class P111TestRunner {
             return operation.getMathTransform();
         }
         if (fromWgs84TransformCode != null && toWgs84TransformCode == null) {
-            CoordinateOperation operation = opAuthorityfactory.createCoordinateOperation(fromWgs84TransformCode);
+            CoordinateOperation operation = opAuthorityFactory.createCoordinateOperation(fromWgs84TransformCode);
             MathTransform transform = operation.getMathTransform();
             return transform;
         }
         if (fromWgs84TransformCode == null && toWgs84TransformCode != null) {
-            CoordinateOperation operation = opAuthorityfactory.createCoordinateOperation(toWgs84TransformCode);
+            CoordinateOperation operation = opAuthorityFactory.createCoordinateOperation(toWgs84TransformCode);
             MathTransform transform = operation.getMathTransform().inverse();
             return transform;
         }
